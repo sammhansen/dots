@@ -1,0 +1,5 @@
+@define-color primary {{ colors.primary.default.rgba}};
+@define-color background {{ colors.background.default.rgba | set_alpha: 0.9 }};
+@define-color on_background {{ colors.on_background.default.rgba }};
+
+@define-color blue #89b4fa;

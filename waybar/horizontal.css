@@ -1,0 +1,127 @@
+@import "colors.css";
+
+* {
+  font-family: "Iosevka Nerd Font";
+  font-weight: bold;
+  min-height: 0;
+  font-size: 97%;
+}
+
+window#waybar {
+  background: @background;
+  border-radius: 7px;
+}
+
+tooltip {
+  color: @subtext;
+  background: @background;
+  border-radius: 10px;
+}
+
+tooltip label {
+  color: @subtext;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+#custom-menu {
+  color: @logo; 
+  font-size: 20px;
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#cpu {
+  color: @mauve;
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#memory {
+  color: @blue;
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#temperature {
+  color: @pink;
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#disk {
+  color: @green;
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#workspaces button {
+  color: @blue;
+  font-size: 13px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#workspaces button.active {
+  color: @mauve;
+  font-size: 13px;
+}
+
+#workspaces button.focused {
+  color: @green;
+  font-size: 13px;
+}
+
+#workspaces button.urgent {
+  color: @pink;
+  font-size: 13px;
+}
+
+#battery,
+#clock,
+#cpu,
+#disk,
+#memory,
+#temperature,
+#tray,
+#custom-swaync {
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#temperature.critical {
+  background-color: #ff0000;
+}
+
+@keyframes blink {
+  to {
+    color: #000000;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

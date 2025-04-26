@@ -1,0 +1,8 @@
+* {
+    background:     {{ colors.background.default.rgba | set_alpha: 0.9 }};
+    background-alt: #282839FF;
+    on-primary-container:     {{ colors.on_primary_container.default.rgba }};
+    selected:       {{ colors.secondary_container.default.rgba }};
+    active:         {{ colors.inverse_primary.default.rgba }};
+    urgent:         {{ colors.error.default.rgba }};
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Arch Packages
+Exec=chromium --profile-directory=Default --app=https://archlinux.org/packages/
+Icon=/home/t4m4r4/.local/share/applications/icons/arch.png
+

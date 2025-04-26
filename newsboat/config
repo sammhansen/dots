@@ -1,0 +1,3 @@
+auto-reload yes
+max-items 0
+browser "xdg-open"  # or your terminal browser like "w3m", "lynx", etc.

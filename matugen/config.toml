@@ -1,0 +1,54 @@
+[config.wallpaper]
+command = "swww"
+arguments = ["img", "--transition-type", "center"]
+set = true
+
+# [templates.waybar]
+# input_path = '~/.config/matugen/templates/matugen-waybar.css'
+# output_path = '~/.config/waybar/matugen/matugen-waybar.css'
+# post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.kitty]
+input_path = './templates/matugen-kitty.conf'
+output_path = '~/.config/kitty/kitty.conf'
+
+[templates.spicetify]
+input_path = '~/.config/matugen/templates/spotify-colors.ini'
+output_path = '~/.config/spicetify/Themes/Comfy/color.ini'
+
+[templates.foot]
+input_path = './templates/matugen-foot.ini'
+output_path = '~/.config/foot/foot.ini'
+
+[templates.starship]
+input_path = './templates/matugen-starship.toml'
+output_path = '~/.config/starship.toml'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/matugen-waybar.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -sigusr2 waybar'
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/matugen-rofi-colors.rasi'
+output_path = '~/.config/rofi/shared/colors.rasi'
+
+[templates.swaync]
+input_path = '~/.config/matugen/templates/matugen-swaync-style.css'
+output_path = '~/.config/swaync/style.css'
+post_hook = 'pkill -sigusr2 swaync'
+
+[templates.tmux]
+input_path = './templates/matugen-tmux.conf'
+output_path = '~/.config/tmux/tmux.conf'
+
+# Gtk3
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/matugen-gtk.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+
+# GTk4
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/matugen-gtk.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+

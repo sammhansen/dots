@@ -1,0 +1,16 @@
+[Added Associations]
+image/png=org.gnome.eog.desktop;
+x-scheme-handler/http=chromium.desktop;
+application/xhtml+xml=chromium.desktop;
+text/html=chromium.desktop;
+x-scheme-handler/https=chromium.desktop;
+
+[Default Applications]
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/http=chromium.desktop
+application/xhtml+xml=chromium.desktop
+text/html=chromium.desktop
+x-scheme-handler/https=chromium.desktop
+text/plain=code.desktop
+image/png=eog.desktop
+application/pdf=org.pwmt.zathura.desktop

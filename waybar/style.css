@@ -1,0 +1,136 @@
+@import "colors.css";
+
+* {
+  font-family: "SpaceMono Nerd Font";
+  /* font-weight: bold; */
+  /* min-height: 0; */
+  font-size: 97%;
+}
+
+window#waybar {
+  background: @background;
+  border-radius: 0px;
+}
+
+tooltip {
+  color: @on_background;
+  background: @background;
+  border-radius: 10px;
+}
+
+tooltip label {
+  color: @on_background;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+#custom-menu {
+  color:@primary;
+  font-size: 20px;
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#cpu {
+  color: @on_background;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* padding-right: 6px; */
+  /* padding-left: 6px; */
+}
+
+#memory {
+  color: @on_background;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* padding-right: 6px; */
+  /* padding-left: 6px; */
+}
+
+#temperature {
+  color: @on_background;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* padding-right: 6px; */
+  /* padding-left: 6px; */
+}
+
+#disk {
+  color: @on_background;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* padding-right: 6px; */
+  /* padding-left: 6px; */
+}
+
+#clock {
+  color: @on_background;
+}
+
+#workspaces button {
+  color: @on_background;
+  font-size: 13px;
+  /* padding-left: 4px; */
+  /* padding-right: 4px; */
+}
+
+#workspaces button.active {
+  color: @on_background;
+  font-size: 13px;
+}
+
+#workspaces button.focused {
+  color: @primary;
+  font-size: 13px;
+}
+
+#workspaces button.urgent {
+  color: @on_background;
+  font-size: 13px;
+}
+
+#battery,
+#clock,
+#cpu,
+#disk,
+#memory,
+#temperature,
+#tray,
+#custom-swaync {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#temperature.critical {
+  background-color: #ff0000;
+}
+
+@keyframes blink {
+  to {
+    color: #000000;
+  }
+}
+
+#bluetooth {
+	color: @on_background;
+}
+
+#custom-swaync {
+	color: @on_background;
+}
+
+#battery {
+	color: @on_background;
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
