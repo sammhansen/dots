@@ -61,7 +61,8 @@ alias "car"="bat"
 
 # set -Ux fish_user_paths $ANDROID_HOME/platform-tools $fish_user_paths 
 
-# set -Ux fish_user_paths /home/asherah/go/bin $fish_user_paths
+set -Ux fish_user_paths /home/asherah/go/bin $fish_user_paths
+set -Ux fish_user_paths /home/t4m4r4/.cargo/bin $fish_user_paths
 
 # fish_add_path /home/asherah/.spicetify
 
