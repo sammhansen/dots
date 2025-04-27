@@ -1,0 +1,5 @@
+polkit-gnome
+adw-gtk-theme
+kvantum
+kvantum-qt5
+qt5ct

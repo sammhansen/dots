@@ -3,10 +3,11 @@ command = "swww"
 arguments = ["img", "--transition-type", "center"]
 set = true
 
-# [templates.waybar]
-# input_path = '~/.config/matugen/templates/matugen-waybar.css'
-# output_path = '~/.config/waybar/matugen/matugen-waybar.css'
-# post_hook = 'pkill -SIGUSR2 waybar'
+# Bat
+[templates.bat]
+input_path = '~/.config/matugen/templates/matugen-bat-colors.tmTheme'
+output_path = '~/.config/bat/themes/matugen-bat-colors.tmTheme'
+post_hook = 'bat cache --build' 
 
 [templates.kitty]
 input_path = './templates/matugen-kitty.conf'
@@ -23,6 +24,10 @@ output_path = '~/.config/foot/foot.ini'
 [templates.starship]
 input_path = './templates/matugen-starship.toml'
 output_path = '~/.config/starship.toml'
+
+[templates.hypr]
+input_path = './templates/matugen-hypr-colors.conf'
+output_path = '~/.config/hypr/hyprland/colors.conf'
 
 [templates.waybar]
 input_path = '~/.config/matugen/templates/matugen-waybar.css'
@@ -51,4 +56,19 @@ output_path = '~/.config/gtk-3.0/gtk.css'
 [templates.gtk4]
 input_path = '~/.config/matugen/templates/matugen-gtk.css'
 output_path = '~/.config/gtk-4.0/gtk.css'
+
+# Qt5
+[templates.qt5]
+input_path = '~/.config/matugen/templates/qtct-colors.conf'
+output_path = '~/.config/qt5ct/colors/matugen-qt5ct.conf'
+
+# Qt6
+[templates.qt6]
+input_path = '~/.config/matugen/templates/qtct-colors.conf'
+output_path = '~/.config/qt6ct/colors/matugen-qt6ct.conf'
+
+# Kvantum
+[templates.kvantum]
+input_path = '~/.config/matugen/templates/matugen.kvconfig'
+output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
 

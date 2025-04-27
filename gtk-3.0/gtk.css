@@ -1,10 +1,3 @@
-/***
- *    ┳┳┓┏┓┏┳┓┳┳┏┓┏┓┳┓  ┏┓┏┳┓┓┏┓
- *    ┃┃┃┣┫ ┃ ┃┃┃┓┣ ┃┃━━┃┓ ┃ ┃┫ 
- *    ┛ ┗┛┗ ┻ ┗┛┗┛┗┛┛┗  ┗┛ ┻ ┛┗┛
- *                              
- */
-
 @define-color accent_color #ffb4a7;
 @define-color accent_bg_color #73342a;
 @define-color accent_fg_color #ffdad4;
@@ -60,3 +53,47 @@ window.csd,             /* gtk4? */
 window.csd decoration { /* gtk3 */
   box-shadow: none;
 }
+
+/* button { */
+/*   background-color: @accent_color; */
+/*   color: @window_fg_color; */
+/* } */
+
+switch {
+  background-color: @accent_color;
+}
+
+/* Optional: Change the border or outline of the slider */
+scale {
+  border-color: @scrollbar_outline_color;
+}
+
+scale slider {
+  background-color: @accent_color;
+}
+
+/* Optional: Highlight the active portion of the slider */
+scale slider:active {
+  background-color: @scrollbar_outline_color; /* This will affect the thumb when it's being dragged */
+}
+
+scale trough {
+  background-color: @accent_color; /* You can use the same accent color or a different one */
+  color: @accent_color; /* You can use the same accent color or a different one */
+}
+
+/* Active (covered) part of the trough (the part the slider moves along) */
+scale trough progress {
+  background-color: @accent_color; /* This covers the portion filled by the slider */
+}
+
+/* This will change the color of all icons in Nautilus */
+/* .icon-view { */
+/*     color: #c1c1ff; /* Set your desired color for the icon text */ */
+/* } */
+/**/
+/* .icon-view .view-column .nautilus-directory { */
+/*     color: #c1c1ff; /* This affects folder icons specifically */ */
+/* } */
+
+
