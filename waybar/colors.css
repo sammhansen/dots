@@ -1,5 +1,5 @@
-@define-color primary rgba(255, 180, 167, 1.0);
-@define-color background rgba(26, 17, 16, 0.9);
-@define-color on_background rgba(241, 223, 219, 1.0);
+@define-color primary rgba(193, 193, 255, 1.0);
+@define-color background rgba(19, 19, 24, 0.9);
+@define-color on_background rgba(228, 225, 233, 1.0);
 
 @define-color blue #89b4fa;

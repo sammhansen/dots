@@ -38,6 +38,10 @@ post_hook = 'pkill -sigusr2 waybar'
 input_path = '~/.config/matugen/templates/matugen-rofi-colors.rasi'
 output_path = '~/.config/rofi/shared/colors.rasi'
 
+[templates.nvim]
+input_path = '~/.config/matugen/templates/matugen-nvim-colors.lua'
+output_path = '~/.local/state/nvim/colors.lua'
+
 [templates.swaync]
 input_path = '~/.config/matugen/templates/matugen-swaync-style.css'
 output_path = '~/.config/swaync/style.css'

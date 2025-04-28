@@ -1,13 +1,13 @@
-@define-color background #1a1110;
-@define-color primary #ffb4a7;
-@define-color outline #a08c89;
-@define-color surface-tint #ffb4a7;
+@define-color background #131318;
+@define-color primary #c1c1ff;
+@define-color outline #918f9a;
+@define-color surface-tint #c1c1ff;
 
-@define-color noti-border-color #ffb4a7;
-@define-color noti-background #442925;
+@define-color noti-border-color #c1c1ff;
+@define-color noti-background #2f2f42;
 @define-color noti-bg-darker #121212;
 @define-color noti-bg-hover #000000;
-@define-color surface #1a1110;
+@define-color surface #131318;
 
 * {
   font-family: Iosevka Nerd Font;
