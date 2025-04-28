@@ -42,13 +42,22 @@ lazy.setup({
 		lazy = true,
 	},
 
+	-- {
+	-- 	"nvim-lualine/lualine.nvim",
+	-- 	dependencies = {
+	-- 		"nvim-tree/nvim-web-devicons",
+	-- 	},
+	-- 	config = function()
+	-- 		require("lualine").setup()
+	-- 	end,
+	-- },
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
 		config = function()
-			require("lualine").setup()
+		  require("plugs.ui.lualine")
 		end,
 	},
 	{
@@ -89,11 +98,7 @@ lazy.setup({
 		end,
 	},
 	{
-		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
-		config = function()
-			require("plugs.mason")
-		end,
+		require("plugs.mason"),
 	},
 	{
 		"stevearc/conform.nvim",
