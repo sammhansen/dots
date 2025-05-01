@@ -3,3 +3,10 @@ adw-gtk-theme
 kvantum
 kvantum-qt5
 qt5ct
+noto-fonts-cjk
+ttf-input-nerd
+otf-monaspace-nerd
+
+easyeffects
+calf #easyeffects bass enhance
+mda.lv2 #easyeffects bass loudness

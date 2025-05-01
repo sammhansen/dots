@@ -1,0 +1,11 @@
+xz
+glu
+mesa
+zip
+unzip
+curl
+git
+lib32-glibc
+lib32-gcc-libs
+lib32-zlib
+lib32-bzip2
